@@ -71,6 +71,15 @@ def audit(password: str) -> None:
 
 
 def main() -> None:
+
+    import sys
+
+    if len(sys.argv) > 1:
+        # Command-line mode: passaudit <password>
+        audit(sys.argv[1])
+        return
+
+    #Interactive mode
     print("passaudit v0.1 - type 'quit' to exit")
     while True:
         pw = input("Enter a password to audit: ")
