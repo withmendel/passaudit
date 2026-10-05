@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "passaudit"
+version = "0.2.0"
+description = "A CLI that scores password strength using entropy estimation."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Mendel Sackey", email = "mendelsackey@gmail.com" }]
+license = { text = "UOD" }
+keywords = ["security", "password", "entropy", "cli"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+]
+
+[project.scripts]
+passaudit = "passaudit:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+py-modules = ["passaudit"]
