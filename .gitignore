@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Logs and outputs
+*.log
+out.txt
+error.log
+
+# Environment / secrets
+.env
+.env.*
+
+# Editors
+.vscode/
+.idea/
+*.swp
